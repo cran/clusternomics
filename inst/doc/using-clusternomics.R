@@ -61,6 +61,17 @@ qplot(1:maxIter, logliks) + geom_line() +
   xlab("MCMC iterations") +
   ylab("Log likelihood")
 
+## ------------------------------------------------------------------------
+wrongClusterCounts <- list(global=2, context=c(2,1))
+worseResults <- 
+  contextCluster(datasets, wrongClusterCounts, 
+              maxIter = maxIter, burnin = burnin, lag = lag,
+              dataDistributions = 'diagNormal',
+              verbose = F)
+
+print(paste('Original model has lower (better) DIC:', results$DIC))
+print(paste('Worse model has higher (worse) DIC:', worseResults$DIC))
+
 ## ---- fig.width=6--------------------------------------------------------
 cc <- numberOfClusters(clusters)
 qplot(seq(from=burnin, to = maxIter, by=lag), cc) + 

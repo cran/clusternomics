@@ -1,10 +1,9 @@
 Package: clusternomics
 Type: Package
 Title: Integrative Clustering for Heterogeneous Biomedical Datasets
-Version: 0.1.0
-Authors@R: c(person("Evelina", "Gabasova", email="egabasova@gmail.com", role=c("aut", "cre")),
-    person("John", "Reid", role="ctb"),
-    person("Lorenz", "Wernisch", role="ctb"))
+Version: 0.1.1
+Author: Evelina Gabasova
+Maintainer: Evelina Gabasova <egabasova@gmail.com>
 Description: Integrative context-dependent clustering for heterogeneous
     biomedical datasets. Identifies local clustering structures in related
     datasets, and a global clusters that exist across the datasets.
@@ -17,10 +16,6 @@ BugReports: https://github.com/evelinag/clusternomics/issues
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2016-08-01 13:49:41 UTC; evelina
-Author: Evelina Gabasova [aut, cre],
-  John Reid [ctb],
-  Lorenz Wernisch [ctb]
-Maintainer: Evelina Gabasova <egabasova@gmail.com>
+Packaged: 2017-03-14 13:54:54 UTC; evelina
 Repository: CRAN
-Date/Publication: 2016-08-01 17:01:02
+Date/Publication: 2017-03-14 15:13:04
